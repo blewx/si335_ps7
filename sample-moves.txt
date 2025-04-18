@@ -1,0 +1,15 @@
+RL
+DL
+DL
+DR
+DR
+DR
+DR
+LR
+LU
+UU
+UR
+UL
+UU
+UU
+RU
