@@ -12,7 +12,10 @@ https://www.geeksforgeeks.org/fractional-knapsack-problem/ - One of the problems
 Our solution to the pathfinding problem was to use the A* algorithm which we learned 
 about in the aritifial intelligence class to find the shortest path to the each remaining 
 target on the board, and then make a greedy choice that picked the highest value comparing 
-all remaining targets / the path length the asset would need to travel in order to reach the target. 
+all remaining targets / the path length the asset would need to travel in order to reach the target.
+We then made it so that this greedy choice compared the target value summed with any additional targets
+that were on the path to get to the target in order to try and get paths that picked up targets if it 
+didn't lower the speed at which our algorithm got to the target.
 We wanted to use A* because it seemed to fit this problem well, it had a distance hueristic called
 manhatten that appeared to do a good job of estimating the values, and it also was able to provide
 solutions and choose targets quickly so our program finishes well within the givin time limit.

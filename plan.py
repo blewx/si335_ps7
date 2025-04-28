@@ -147,9 +147,12 @@ class Asset:
             
             if path:
                 # compute total points if we collect all targets on the way
+                
                 gain = collectable_value_on_path(path, targets)
                 score = gain / len(path)    # points per move - Tried to do this with subtraction, but it was not nearly as good.
                                             # this forces the alogorithm to choose targets that are closer to the asset at first
+                
+                print(target, gain, len(path), score)
                 if score > best_score:
                     best_path, best_score = path, score
         
